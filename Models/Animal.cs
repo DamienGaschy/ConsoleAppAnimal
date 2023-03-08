@@ -11,9 +11,9 @@ namespace ConsoleAppAnimal.Models
     {
         private string Name { get; set; }
 
-        public Animal(string name)
+        public Animal()
         {
-            Name = name;
+            this.Name = "Clifford";
         }
 
         public void Move()
@@ -24,6 +24,11 @@ namespace ConsoleAppAnimal.Models
         public void Sleep()
         {
             Console.WriteLine($"{Name} sleep");
+        }
+
+        public Animal(string name)
+        {
+            this.Name = name;
         }
     }
 }

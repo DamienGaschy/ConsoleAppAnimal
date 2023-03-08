@@ -5,10 +5,11 @@ class Program
 {
     static void Main(string[] args)
     {
-        string name = Console.ReadLine();
+        ////Entrer le nom sur la commande
+        //string name = Console.ReadLine();
 
         //Création Animal en prennant un nom en paramètre
-        Animal Chien = new Animal(name);
+        Animal Chien = new Animal();
 
         //affiche {Name} + move
         Chien.Move();
