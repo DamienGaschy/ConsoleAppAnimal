@@ -13,11 +13,11 @@ class Program
         //affiche {Name} + move
         Chien.Move();
 
-        //affiche {Name} + sleep
+        ////affiche {Name} + sleep
         Chien.Sleep();
 
         //Création Animal en prenant un nom par défaut
-        Animal Chat = new Animal();
+        Animal Chat = new Animal("Garfield");
 
         //affiche {Name} + move
         Chat.Move();
