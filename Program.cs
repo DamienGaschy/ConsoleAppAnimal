@@ -7,7 +7,7 @@ class Program
     {
         string name = Console.ReadLine();
 
-        //Création Animal
+        //Création Animal en prennant un nom en paramètre
         Animal Chien = new Animal(name);
 
         //affiche {Name} + move
@@ -15,5 +15,14 @@ class Program
 
         ////affiche {Name} + sleep
         Chien.Sleep();
+
+        //Création Animal en prenant un nom par défaut
+        Animal Chat = new Animal();
+
+        //affiche {Name} + move
+        Chat.Move();
+
+        ////affiche {Name} + sleep
+        Chat.Sleep();
     }
 }
