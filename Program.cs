@@ -19,11 +19,11 @@ class Program
         //Chat.Sleep();
 
         //Etape 3
-        Dragon myDragon = new Dragon("Dragon");
+        Dragon myDragon = new Dragon("Smaug");
         myDragon.Move();
         myDragon.Sleep();
 
-        Griffin myGriffin = new Griffin("Griffin");
+        Griffin myGriffin = new Griffin("Peter Griffin");
         myGriffin.Move();
         myGriffin.Sleep();
     }

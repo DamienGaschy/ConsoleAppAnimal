@@ -44,6 +44,11 @@ namespace ConsoleAppAnimal.Models
         {
             Console.WriteLine($"{Name} vole dans les airs.");
         }
+
+        public new void Sleep() 
+        {
+            Console.WriteLine($"{Name} est endormi sur son trésor.");
+        }
     }
 
     public class Griffin : Animal
@@ -60,6 +65,11 @@ namespace ConsoleAppAnimal.Models
         {
             Console.WriteLine($"{Name} s'envole .");
         }
+        public new void Sleep()
+        {
+            Console.WriteLine($"{Name} est endormi dans son nid.");
+        }
+
     }
 }
 
