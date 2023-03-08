@@ -10,27 +10,39 @@ namespace ConsoleAppAnimal.Models
 {
     public abstract class Animal
     {
-        protected string Name { get; set; }
+        public string Name { get; set; }
 
-        //nom par défaut
         public Animal()
         {
-            this.Name = "Clifford";
+            Name = "Random";
         }
 
-        //move base
-        public abstract void Move();
-
-        //sleep base
-        public void Sleep()
-        {
-            Console.WriteLine($"{Name} sleep");
-        }
-
-        //nom définit
         public Animal(string name)
         {
-            this.Name = name;
+            Name = name;
+        }
+
+        public abstract void Move();
+
+        public void Sleep()
+        {
+            Console.WriteLine($"{Name} est endormi.");
+        }
+    }
+
+    public class Dragon : Animal
+    {
+        public Dragon() : base()
+        {
+        }
+
+        public Dragon(string name) : base(name)
+        {
+        }
+
+        public override void Move()
+        {
+            Console.WriteLine($"{Name} vole dans les airs.");
         }
     }
 
@@ -46,7 +58,7 @@ namespace ConsoleAppAnimal.Models
 
         public override void Move()
         {
-            Console.WriteLine($"{Name} vole");
+            Console.WriteLine($"{Name} s'envole .");
         }
     }
 }
