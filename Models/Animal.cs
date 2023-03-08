@@ -10,11 +10,11 @@ namespace ConsoleAppAnimal.Models
 {
     public abstract class Animal
     {
-        public string Name { get; set; }
+        public string Name { get; private set; }
 
         public Animal()
         {
-            Name = "Random";
+            Name = "Clifford";
         }
 
         public Animal(string name)
@@ -28,48 +28,6 @@ namespace ConsoleAppAnimal.Models
         {
             Console.WriteLine($"{Name} est endormi.");
         }
-    }
-
-    public class Dragon : Animal
-    {
-        public Dragon() : base()
-        {
-        }
-
-        public Dragon(string name) : base(name)
-        {
-        }
-
-        public override void Move()
-        {
-            Console.WriteLine($"{Name} vole dans les airs.");
-        }
-
-        public new void Sleep() 
-        {
-            Console.WriteLine($"{Name} est endormi sur son trésor.");
-        }
-    }
-
-    public class Griffin : Animal
-    {
-        public Griffin() : base()
-        {
-        }
-
-        public Griffin(string name) : base(name)
-        {
-        }
-
-        public override void Move()
-        {
-            Console.WriteLine($"{Name} s'envole .");
-        }
-        public new void Sleep()
-        {
-            Console.WriteLine($"{Name} est endormi dans son nid.");
-        }
-
     }
 }
 
