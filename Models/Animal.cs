@@ -5,13 +5,13 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleAppAnimal
+namespace ConsoleAppAnimal.Models
 {
     public class Animal
     {
         private string Name { get; set; }
 
-        public Animal(string name) 
+        public Animal(string name)
         {
             Name = name;
         }

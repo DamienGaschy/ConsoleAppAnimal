@@ -1,5 +1,5 @@
 ﻿using System;
-using ConsoleAppAnimal;
+using ConsoleAppAnimal.Models;
 
 class Program
 {
@@ -13,7 +13,7 @@ class Program
         //affiche {Name} + move
         Chien.Move();
 
-        ////affiche {Name} + sleep
+        //affiche {Name} + sleep
         Chien.Sleep();
 
         //Création Animal en prenant un nom par défaut
@@ -22,7 +22,7 @@ class Program
         //affiche {Name} + move
         Chat.Move();
 
-        ////affiche {Name} + sleep
+        //affiche {Name} + sleep
         Chat.Sleep();
     }
 }
