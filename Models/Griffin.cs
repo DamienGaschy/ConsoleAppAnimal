@@ -3,27 +3,34 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
-namespace ConsoleAppAnimal.Models
+namespace CSharpAnimal.Models.Animals
 {
-    public class Griffin : Animal
+    class Griffin : Animal, IPilotage
     {
         public Griffin()
         {
+            name = "Griffin";
+        }
+        public Griffin(string name, string type, int ID)
+        {
+            this.name = name;
+            this.Type = type;
+            this.Id = ID;
         }
 
-        public Griffin(string name) : base(name)
+        public override void Moove()
         {
+            Console.WriteLine($"{name} s'envole");
         }
 
-        public override void Move()
-        {
-            Console.WriteLine($"{Name} s'envole .");
-        }
         public new void Sleep()
         {
-            Console.WriteLine($"{Name} est endormi dans son nid.");
+            Console.WriteLine($"{name} dors dans son nid");
         }
-
     }
 }
+
+
+

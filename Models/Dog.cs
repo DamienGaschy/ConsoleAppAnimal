@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace CSharpAnimal.Models.Animals
 {
-
-    class Vehicule : IPilotage
+    internal class Dog : Animal
     {
-        public void Moove()
+        public Dog(string name, string type, int ID)
         {
-            Console.WriteLine(" Moove !");
+            this.name = name;
+            this.Type = type;
+            this.Id = ID;
         }
     }
 }

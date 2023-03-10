@@ -6,28 +6,35 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace ConsoleAppAnimal.Models
+namespace CSharpAnimal.Models.Animals
 {
-    public abstract class Animal
+    abstract public class Animal
     {
-        public string Name { get; private set; }
-
         public Animal()
         {
-            Name = "Clifford";
+            this.name = "Cat";
+            this.Type = "commun";
+            this.Id = 1;
         }
-
-        public Animal(string name)
+        public Animal(string name, string type, int id)
         {
-            Name = name;
+            this.name = name;
+            this.Type = type;
+            this.Id = id;
+
         }
-
-        public abstract void Move();
-
-        public void Sleep()
+        public string name { get; set; }
+        public string Type { get; set; }
+        public int Id { get; set; }
+        public virtual void Moove()
         {
-            Console.WriteLine($"{Name} est endormi.");
+            Console.WriteLine(" moove");
         }
+        public virtual void Sleep()
+        {
+            Console.WriteLine(" sleep");
+        }
+
     }
 }
 

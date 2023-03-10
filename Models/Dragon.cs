@@ -4,26 +4,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleAppAnimal.Models
+namespace CSharpAnimal.Models.Animals
 {
-    public class Dragon : Animal
+    class Dragon : Animal, IPilotage
     {
         public Dragon()
         {
+            name = "Smaug";
         }
 
-        public Dragon(string name) : base(name)
+        public Dragon(string name, string type, int ID)
         {
+            this.name = name;
+            this.Type = type;
+            this.Id = ID;
         }
-
-        public override void Move()
+        public override void Moove()
         {
-            Console.WriteLine($"{Name} vole dans les airs.");
+            Console.WriteLine($"{name} vole");
         }
 
         public new void Sleep()
         {
-            Console.WriteLine($"{Name} est endormi sur son trésor.");
-        }
+            Console.WriteLine($"{name} dors sur son trésor");
+        }s
     }
 }
