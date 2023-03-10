@@ -6,13 +6,14 @@ namespace CSharpAnimal.Models.Animals
     {
         public Griffin()
         {
-            name = "Griffin";
+            name = "Peter";
         }
-        public Griffin(string name, string type, int ID)
+        public Griffin(string name, string type, int ID, int age)
         {
             this.name = name;
             this.Type = type;
             this.Id = ID;
+            this.Age = age;
         }
 
         public override void Moove()

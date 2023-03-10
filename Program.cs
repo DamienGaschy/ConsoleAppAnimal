@@ -14,14 +14,14 @@ class Program
 
 
 
-        Dog dog = new Dog("Loup", "Epic", 10);
-        Dragon enderDragon = new Dragon("Ender Dragon", "Legendary", 99);
-        Griffin griffin = new Griffin("GriffonDort", "Rare", 5);
-        Dragon ptera = new Dragon("Ptera", "Commun", 1);
-        Dog wolf = new Dog("Wolf", "Commun", 2);
-        Dog ben = new Dog("Ben", "Commun", 20);
+        Dog Quipsi = new Dog("Loup", "Epic", 10 , 12);
+        Dragon Smaug = new Dragon("Smaug", "Legendary", 99 , 2700);
+        Griffin Peter = new Griffin("Peter Griffin", "Rare", 5 , 170);
+        Dragon Altaria = new Dragon("Altaria", "Commun", 1 , 20);
+        Dog Scott = new Dog("Scott", "Commun", 2 , 3);
+        Dog Rocket = new Dog("Rocket", "Commun", 20 , 10);
 
-        Animal[] liste = { dog, enderDragon, griffin, ptera, wolf, ben };
+        Animal[] liste = { Quipsi, Smaug, Peter, Altaria, Scott, Rocket };
         //var result = liste.Where(c => !c.Type.Contains("Rare"));
 
         //foreach (Animal animaux in result)
@@ -34,7 +34,7 @@ class Program
             where animaux.Type == "Commun"
             select animaux;
 
-        var sortedliste = listeAnimaux.OrderByDescending(c => c.Id).ToList();
+        var sortedliste = listeAnimaux.OrderByDescending(c => c.Age).ToList();
 
 
 
