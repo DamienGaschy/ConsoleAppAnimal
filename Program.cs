@@ -1,5 +1,4 @@
-﻿using System;
-using CSharpAnimal.Models.Animals;
+﻿using CSharpAnimal.Models.Animals;
 
 class Program
 {

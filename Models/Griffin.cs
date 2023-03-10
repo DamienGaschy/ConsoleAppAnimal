@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
+﻿using CSharpAnimal.Models.Animals;
 
 namespace CSharpAnimal.Models.Animals
 {
@@ -22,15 +17,12 @@ namespace CSharpAnimal.Models.Animals
 
         public override void Moove()
         {
-            Console.WriteLine($"{name} s'envole");
+            Console.WriteLine($"{name} moove");
         }
 
         public new void Sleep()
         {
-            Console.WriteLine($"{name} dors dans son nid");
+            Console.WriteLine($"{name} sleep");
         }
     }
 }
-
-
-

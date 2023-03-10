@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using CSharpAnimal.Models.Animals;
 namespace CSharpAnimal.Models.Animals
 {
     class Dragon : Animal, IPilotage
     {
         public Dragon()
         {
-            name = "Smaug";
+            name = "Dragon";
         }
 
         public Dragon(string name, string type, int ID)
@@ -21,12 +16,12 @@ namespace CSharpAnimal.Models.Animals
         }
         public override void Moove()
         {
-            Console.WriteLine($"{name} vole");
+            Console.WriteLine($"{name} moove");
         }
 
         public new void Sleep()
         {
-            Console.WriteLine($"{name} dors sur son trésor");
-        }s
+            Console.WriteLine($"{name} sleep");
+        }
     }
 }

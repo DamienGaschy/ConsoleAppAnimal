@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
+﻿using System.Globalization;
 
 namespace CSharpAnimal.Models.Animals
 {
@@ -28,13 +22,12 @@ namespace CSharpAnimal.Models.Animals
         public int Id { get; set; }
         public virtual void Moove()
         {
-            Console.WriteLine(" moove");
+            Console.WriteLine("Moove !");
         }
         public virtual void Sleep()
         {
-            Console.WriteLine(" sleep");
+            Console.WriteLine("Sleep !");
         }
 
     }
 }
-
